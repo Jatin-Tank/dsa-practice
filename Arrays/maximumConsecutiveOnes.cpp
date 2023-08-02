@@ -17,7 +17,7 @@ int maxOnes(vector<int> &arr)
 }
 int main()
 {
-    // The array is a binary array
+    // The array is a binary array having one and zeroes only
     vector<int> arr = {1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1};
     cout << "The maximum consecutive one's are : " << maxOnes(arr);
     return 0;
