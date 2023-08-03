@@ -26,14 +26,13 @@ int maxElemInRange(vector<int> &left, vector<int> &right, int n)
         freq[left[i]]++;
         freq[right[i] + 1]--;
     }
+    int res = 0;
     for (int i = 1; i < 100; i++)
     {
         freq[i] = freq[i] + freq[i - 1];
-    }
-    int res = 0;
-    for (int i = 1; i < 100; i++)
         if (freq[i] > freq[res])
             res = i;
+    }
     return res;
 }
 int main()
