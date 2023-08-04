@@ -6,13 +6,13 @@ void sayDigits(int n)
     // Base Case
     if (n == 0)
         return;
-    // Preprocessing
+
     sayDigits(n / 10);
     cout << arr[n % 10] << " ";
 }
 int main()
 {
     int n = 412;
-    sayDigits(412);
+    sayDigits(n);
     return 0;
 }
