@@ -12,7 +12,7 @@ int arraySum(int *arr, int n)
 }
 int main()
 {
-    int arr[] = {1, 5, 2, 3, 4};
+    int arr[] = {5};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "The sum of array is : " << arraySum(arr, n);
     return 0;
